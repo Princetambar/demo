@@ -1,4 +1,4 @@
 demo
 ====
 
-Demo app integration RSS feed
+Demo app (Integration RSS feed parser)
