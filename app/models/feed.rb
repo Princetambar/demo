@@ -1,4 +1,4 @@
-#require 'feedzirra'
+require 'feedzirra'
 class Feed < ActiveRecord::Base
   has_many    :feed_posts
   before_save :update_title
@@ -8,8 +8,8 @@ class Feed < ActiveRecord::Base
   private
 
    def update_title
-   	# feed = Feedzirra::Feed.fetch_and_parse(url)
-    # self.title = feed.title if feed
+   	 feed = Feedzirra::Feed.fetch_and_parse(url)
+     self.title = feed.title if feed
    end
 
    def add_or_update_posts
