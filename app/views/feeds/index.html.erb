@@ -3,17 +3,14 @@
 <table>
   <tr>
     <th>Url</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Actions</th>
   </tr>
 
 <% @feeds.each do |feed| %>
   <tr>
     <td><%= feed.url %></td>
-    <td><%= link_to 'Show', feed,:format => "rss" %></td>
-    <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
-    <td><%= link_to 'Destroy', feed, :confirm => 'Are you sure?', :method => :delete %></td>
+     <td> <%= link_to 'Show', feed %> | <%= link_to 'Edit', edit_feed_path(feed) %> |
+     <%= link_to 'Destroy', feed, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

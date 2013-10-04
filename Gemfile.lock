@@ -40,7 +40,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
-    mysql2 (0.2.18)
+    mysql2 (0.2.20)
     polyglot (0.3.3)
     rack (1.2.8)
     rack-mount (0.6.14)

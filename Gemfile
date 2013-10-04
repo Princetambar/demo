@@ -7,7 +7,7 @@ gem 'rails', '3.0.20'
 
 #gem 'sqlite3'
 gem 'mysql2', '~> 0.2.6'
-gem "feedzirra", "~> 0.1.3"
+# gem "feedzirra"
 # Use unicorn as the web server
 # gem 'unicorn'
 
