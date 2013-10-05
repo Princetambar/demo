@@ -12,6 +12,11 @@ class Feed < ActiveRecord::Base
    # end
 
    def add_or_update_posts
-   	 FeedPost.update_posts_from_feed(self.url,self.id)
+     error =[]
+     begin
+   	    FeedPost.update_posts_from_feed(self.url,self.id)
+     rescue Exception => e
+      raise "Error adding posts of feed"
+     end
    end
 end
